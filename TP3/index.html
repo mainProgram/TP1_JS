@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <section class="container">
+        <video src="img/pexels-mart-production-7565441 (1).mp4" muted autoplay loop></video>
+        <section class="card">
+            <section class="mycard">
+                <section class="password">
+                    <p>Generated password </p>
+                    <p id="password"></p>
+                    <button id="copy" hidden>Copy</button>
+                </section>
+                <section class="constraints" id="constraints">
+                    <div class="constraint">
+                        <label for="passwordLength">Password length [5-20]</label>
+                        <input type="number" name="" id="passwordLength" min="5" max="20">
+                    </div>
+                    <div class="constraint">
+                        <label for="uppercase">Contains uppercase letters</label>
+                        <input type="checkbox" name="" id="uppercase">
+                    </div>
+                    <div class="constraint">
+                        <label for="lowercase">Contains lowercase letters</label>
+                        <input type="checkbox" name="" id="lowercase">
+                    </div>
+                    <div class="constraint">
+                        <label for="number">Contains numbers</label>
+                        <input type="checkbox" name="" id="number">
+                    </div>
+                    <div class="constraint">
+                        <label for="specialChars">Contains special characters</label>
+                        <input type="checkbox" name="" id="specialChars">
+                    </div>
+                </section>
+                <section class="button">
+                    <button id="button" disabled>Generate password</button>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

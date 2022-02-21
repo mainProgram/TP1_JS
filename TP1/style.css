@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("img/risto-kokkonen-TrTJelMQTNM-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  justify-content: center; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-top: 2%; }
+
+.addNew {
+  align-self: flex-end;
+  padding: 1rem 1rem;
+  border: 2px solid;
+  background: transparent;
+  border-radius: 1rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  width: 14%; }
+  .addNew:hover {
+    color: white;
+    background-color: #521010;
+    cursor: pointer; }
+
+.textareas {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap; }
+  .textareas .mytextarea {
+    margin: 2% 2%;
+    color: white; }
+    .textareas .mytextarea .header {
+      max-width: 80vw;
+      min-width: 20vw;
+      display: flex;
+      background-color: black;
+      height: 3vh;
+      border-top: 2px solid white;
+      justify-content: flex-end; }
+      .textareas .mytextarea .header .fi {
+        margin-left: 3%; }
+        .textareas .mytextarea .header .fi:hover {
+          background-color: black;
+          cursor: pointer; }
+      .textareas .mytextarea .header:hover {
+        background-color: #521010; }
+  .textareas textarea {
+    outline: none;
+    max-width: 80vw;
+    min-width: 20vw;
+    height: 400px; }
+
+/*# sourceMappingURL=style.css.map */

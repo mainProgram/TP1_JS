@@ -1,0 +1,89 @@
+@mixin btn{
+    border: none;
+    border-radius: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    input[type="text"]{
+        width: 70%;
+        @include btn;
+        &:focus{
+            outline-color: aqua;
+        }
+    }
+    input[type="button"]{
+        @include btn;
+        &:hover{
+            background-color: #777;
+        }
+    }
+    .item{
+        margin-top: 2%;
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+
+}
+h1{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    color: #000;
+    padding: 1rem 1rem;
+    background-color: white;
+    margin-bottom: 2%;
+    min-width: 20%;
+}
+td{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 2px;
+    color: white;
+}
+table{
+    /*border-collapse: separate;*/
+    border-spacing: 20px;
+}
+span{
+    font-size: 0.8em;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+td:first-child{
+    width: 250px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
